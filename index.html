@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RockPapperScis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>  
-<button class="start" style="width: 255px; height: 255px; justify-self: center; align-self: center; text-align: center;">START NOW</button>
+
+<body>
+    <div class="header">
+        <h1>Goofy Little Goobers <span>RPS</span>!</h1>
+        <h2>Rock Paper Scissors And... Freaky? RPS Has Never Been More Fun!</h2>
+        <p class="instructions">You've played <span class="spanInstruction">RPS</span> before, you know the rules! We're
+            playing first to <span class="spanInstruction">five</span> wins here, so no lucky 1 round wins!</p>
+        </div>
+        <div class="content">
+            <div class="finalScreen hidden ">
+                <div class="winLoseContainer">
+                    <div class="winLoseMsg">
+                        <p class="winLoseText">a</p>
+                    </div>
+                    <button class="button restart">play again</button>
+
+                </div>
+            </div>
+            <div class="selections">
+            <div class="yourSelection">
+                <img class="pic1" alt="picture of a rock paper or scissors" src="public/rock.png">
+                <p class="humanScore">Your score: 0</p>
+            </div>
+            <div class="winLose">
+                <p class="para"></p>
+            </div>
+            <div class="compSelection">
+                <img class="pic2" alt="picture of your opponents selection" src="public/rock.png">
+                <p class="compScore">Computer score: 0</p>
+            </div>
+        </div>
+        <div class="choices">
+            <button class="button rock">R-ROCK 🗿</button>
+            <button class="paper button">Paper~ 🧻</button>
+            <button class="scissors button">SCISSOR ✂</button>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
+
 </html>
