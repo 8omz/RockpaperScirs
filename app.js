@@ -1,3 +1,37 @@
+// sfx
+const sfx = {
+    suika: new Howl({
+        src: [
+            'public/suika.mp3'
+        ],
+        loop: false,
+        onend: function() {
+            console.log("Done playing sfx!")
+        }
+    })
+}
+
+document.querySelector(".play-music").addEventListener("click", () => {
+    // Resume the AudioContext
+    if (Howler.ctx.state === 'suspended') {
+        Howler.ctx.resume().then(() => {
+            if (!sfx.suika.playing()) {
+                sfx.suika.play();
+            }
+        });
+    } else {
+        if (!sfx.suika.playing()) {
+            sfx.suika.play();
+        }
+    }
+});
+
+
+document.querySelector(".stop-music").addEventListener("click", () => {
+    sfx.suika.pause();
+});
+
+
 let humanScore = 0
 let ComputerScore = 0
 let rounds = 0

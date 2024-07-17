@@ -64,7 +64,35 @@ p>.spanInstruction {
     font-size: 1.5rem;
 
 }
-
+#button {
+    font-size: 16px;
+    color: #eee;
+    width: 50px;
+    padding: 15px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    background: rgba(146, 136, 156, 0.8);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    opacity: 0.8;
+    cursor: pointer;
+}
+#button:hover {
+    opacity: 0.4;
+  }
+  
+  
+.play-music{
+    position: fixed;
+    left: 0;
+    top: 30px;
+   background-color: none;
+}
+.stop-music{
+    position: fixed;
+    left: 60px;
+    top: 30px;
+}
 /* content/body */
 .content {
     display: flex;
